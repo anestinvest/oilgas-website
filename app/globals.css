@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero-grid {
+  background-image: linear-gradient(
+      rgba(56, 189, 248, 0.08) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.08) 1px, transparent 1px);
+  background-size: 80px 80px;
+  animation: grid-drift 18s linear infinite;
+  mask-image: radial-gradient(circle at top, rgba(0, 0, 0, 0.85), transparent 70%);
+}
+
+@keyframes grid-drift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 160px 160px;
+  }
+}
