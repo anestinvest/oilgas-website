@@ -25,6 +25,19 @@ body {
   mask-image: radial-gradient(circle at top, rgba(0, 0, 0, 0.85), transparent 70%);
 }
 
+.hero-glow {
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(56, 189, 248, 0.18),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 80% 10%,
+      rgba(34, 211, 238, 0.12),
+      transparent 40%
+    );
+}
+
 @keyframes grid-drift {
   0% {
     background-position: 0 0;

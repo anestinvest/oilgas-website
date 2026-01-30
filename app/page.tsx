@@ -136,9 +136,10 @@ export default function Home() {
 
       <main>
         <section className="relative overflow-hidden pb-24 pt-24">
-          <div className="hero-grid pointer-events-none absolute inset-0 opacity-80" />
+          <div className="hero-grid pointer-events-none absolute inset-0 opacity-70" />
+          <div className="hero-glow pointer-events-none absolute inset-0" />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-cyan-500/10 via-transparent to-graphite" />
-          <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6">
+          <div className="mx-auto grid w-full max-w-6xl gap-12 px-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <motion.div
               initial="hidden"
               animate="visible"
@@ -154,6 +155,10 @@ export default function Home() {
               </h1>
               <p className="mt-6 text-lg text-slate-200">
                 Lubricants • Base Oils • Energy Logistics
+              </p>
+              <p className="mt-6 text-sm text-slate-300">
+                A Gazprom-inspired corporate platform designed for strict
+                reliability, compliance, and engineered supply continuity.
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
                 <a
@@ -176,14 +181,33 @@ export default function Home() {
               transition={{ duration: 1 }}
               className="grid gap-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur"
             >
-              <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">
-                Precision in every delivery
-              </p>
+              <div className="flex items-center justify-between">
+                <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">
+                  Hero brief
+                </p>
+                <span className="text-xs uppercase tracking-[0.4em] text-slate-400">
+                  2024
+                </span>
+              </div>
               <p className="text-slate-200">
                 Integrated trading, storage, and chartering solutions delivering
                 consistent supply with transparent reporting and risk-managed
                 execution.
               </p>
+              <div className="grid gap-4 border-t border-white/10 pt-6 text-sm text-slate-200">
+                <div className="flex items-center justify-between">
+                  <span>Supply integrity</span>
+                  <span className="text-cyan-300">24/7</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Compliance readiness</span>
+                  <span className="text-cyan-300">ISO 9001</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Global coverage</span>
+                  <span className="text-cyan-300">EMEA + APAC</span>
+                </div>
+              </div>
             </motion.div>
           </div>
         </section>
